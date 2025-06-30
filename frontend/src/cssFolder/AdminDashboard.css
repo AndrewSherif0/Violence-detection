@@ -1,0 +1,20 @@
+.dashboard-container1 {
+  position: fixed;
+  top: 2.5%;
+  left: 2.5%;
+  right: 2.5%;
+  bottom: 2.5%;
+  background-color: rgb(30 30 30 / 33%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding-left: 100px;
+  transition: padding-left 0.3s ease;
+}
+
+.admin-sidebar:hover ~ .dashboard-container1,
+.dashboard-container1.sidebar-expanded {
+  padding-left: 200px;
+}
